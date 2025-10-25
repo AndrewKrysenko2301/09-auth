@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Note Hub",
     description:
       "Share and revisit your ideas effortlessly with Note Hub — a fast, reliable notebook designed to keep your creativity flowing.",
-    url: "https://08-zustand-red-six.vercel.app/",
+    url: "https://09-auth-theta-mauve.vercel.app/",
     images: [
       { url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg" },
     ],

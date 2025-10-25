@@ -5,7 +5,6 @@ import { Note } from "@/types/note";
 import { CheckSessionRequest, NotesHTTPResponse } from "./clientApi";
 import type { AxiosResponse } from "axios";
 
-// Універсальна функція для формування заголовка Cookie
 const getAllCookiesHeader = async (): Promise<string> => {
   const cookieStore = await cookies();
   const allCookies: { name: string; value: string }[] = cookieStore.getAll();
@@ -59,7 +58,6 @@ export const getMe = async (): Promise<User> => {
   return data;
 };
 
-// ❗ Повертаємо повний AxiosResponse, бо middleware потребує headers
 export const checkSession = async (): Promise<
   AxiosResponse<CheckSessionRequest>
 > => {
